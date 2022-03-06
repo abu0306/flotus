@@ -1,2 +1,4 @@
+package android.wlib
+
 configurations.maybeCreate("default")
 artifacts.add("default", file('wlib.aar'))

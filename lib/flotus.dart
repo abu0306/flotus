@@ -93,4 +93,10 @@ class Flotus {
     });
     return addr;
   }
+
+  static Future<bool> validateAddress(String _address) async {
+    final res =
+        await _channel.invokeMethod("validateAddress", {'address': _address});
+    return res;
+  }
 }
